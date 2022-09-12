@@ -1,0 +1,31 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;1,700&family=Happy+Monkey&family=Mulish:wght@200&family=Orbitron:wght@500&family=Poppins:ital,wght@0,200;1,100&family=Roboto:wght@100;300;400&family=Ubuntu:ital,wght@0,500;0,700;1,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main class="container">
+            <form>
+                <label for="color"></label>
+                <input type="color" id="fav-color" value="#F55A5A">
+                <select name="mode" id="color-mode">
+                    <option value="monochrome">monochrome</option>
+                    <option value="monochrome-dark">monochrome-dark </option>
+                    <option value="monochrome-light">monochrome-light</option>
+                    <option value="analogic">analogic</option>
+                    <option value="compliment">complement</option>
+                    <option value="analogic-compliment">analogic-complement</option>
+                    <option value="triad">triad</option>
+                    <option value="quad">quad</option>
+                </select>
+                <button id="get-color">get color scheme</button>
+            </form>
+            
+            <div id="color-container" class="col-container" >
+                
+            </div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

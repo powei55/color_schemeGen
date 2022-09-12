@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    background: #353;
+
+}
+/* typographt */
+
+input,select {
+    width: 50%;
+    margin-bottom: .5em;
+    margin-left: 1em;
+}
+
+
+select {
+    padding: .5em;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1em;
+}
+button {
+    display: inline-block;
+   padding: .5em 1rem;
+   background: green; 
+   text-transform: capitalize;
+   border-radius: 5px;
+   margin-bottom: .5em;
+}
+
+
+/* layout */
+.container {
+    /* border: 2px solid black; */
+        width: 90%;
+        max-width: 1800px;
+        margin: 0 auto;
+}
+form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+.col-container {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+}
+
+.bg-color {
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+    width: 10rem;
+    height: 20rem
+}
+.color-text {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+@media(min-width:675px) {
+    body {
+        margin-top: 2em;
+    }
+    form{
+        flex-direction: row;
+    }
+    button {
+            display: inline-block;
+            padding: .2em 2rem;
+            background: green; 
+            border-radius: 5px;
+            margin-left: .5em;
+            
+    }
+    select {
+            width: 40%;
+            padding: .5em;
+            border-radius: 5px;
+        
+    }
+    input {
+            width: 10%
+    }
+        .col-container {
+            flex-direction: row;
+    }
+        .bg-color {
+             margin-top: 1em;
+    }
+
+}
+
+
+
+
